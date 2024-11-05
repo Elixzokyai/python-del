@@ -1,4 +1,6 @@
 # class keyword
+
+
 class Car:
     # database table
     def __init__(self, make , model, yom, color, speed ):
@@ -7,12 +9,12 @@ class Car:
         self.model = model
         self.yom = yom
         self.color = color
-        self.speed = speed
+        self.speed = "Speed"
 #     methods
     def print_name(self):
-        print(f"This is the {self.make} {self.model}")
+        return (f"This is the {self.make} {self.model}")
     def get_speed(self, distance):
-        print(f"This is the speed of the {self.make} {self.model}- {self.speed} {distance}")
+        print(f"This is the speed of the {self.make} {self.model} {self.speed} {distance}")
 ## create objects
 car1 = Car("Toyota","Camry","2021","Black","240")
 car2 = Car("Toyota","Corolla","2010","Silver","120")
